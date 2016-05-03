@@ -13,8 +13,9 @@
             <a class="navbar-brand" href="#">Sports Store</a>
         </div>
         <div class="row panel">
-            <div id="categories" class="col-xs-3">
-                Put something usefur here later
+            <div id="categories" class="col-xs-3">                
+                @Html.Action("Menu", "Nav") 
+                <!--    where Menu is the method name from NavController--> 
             </div>
             <div class="col-xs-8">
                 @RenderBody()
