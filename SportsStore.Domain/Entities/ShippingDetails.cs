@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Linq;
+using System.ComponentModel.DataAnnotations;
 
 namespace SportsStore.Domain.Entities
 {
