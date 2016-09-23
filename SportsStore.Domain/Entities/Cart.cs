@@ -14,13 +14,9 @@ namespace SportsStore.Domain.Entities
                 .FirstOrDefault();
 
             if (line == null)
-            {
                 lineCollection.Add(new CartLine { Product = product, Quantity = quantity });
-            }
             else
-            {
                 line.Quantity += quantity;
-            }
         }
 
         public void RemoveLine(Product product)

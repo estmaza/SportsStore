@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SportsStore.Domain.Entities.Cart">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAgAAAAAACAAAAAABGAAA=</HashCode>
+      <FileName>Entities\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Entities.CartLine">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entities\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Entities.Product">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAgAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Entities.ShippingDetails">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAACIQAAAIAAAAgAEAARAAAAAA=</HashCode>
+      <FileName>Entities\ShippingDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Concerte.EFDbContext">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Concerte\EFDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Concerte.EFProductRepository">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Concerte\EFProductRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SportsStore.Domain.Concerte.EmailSettings">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAABAAAQACAAQBAQAAAAAAAAAACgAAAAAAAAAA=</HashCode>
+      <FileName>Concerte\EmailOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsStore.Domain.Concerte.EmailOrderProcessor">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAI=</HashCode>
+      <FileName>Concerte\EmailOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SportsStore.Domain.Abstract.IOrderProcessor">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Abstract\IOrderProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SportsStore.Domain.Abstract.IProductRepository">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Abstract\IProductRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
