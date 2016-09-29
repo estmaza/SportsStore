@@ -11,15 +11,36 @@ namespace SportsStore.Domain.Concerte
 
         public IEnumerable<Product> Products
         {
-            get
-            {
-                return context.Products;
-            }
+            get { return context.Products; }            
+        }
 
-            set
+        public Product DeleteProduct(int productID)
+        {
+            Product dbEntry = context.Products.Find(productID);
+            if (dbEntry != null)
             {
-                throw new NotImplementedException("There is no setter in the book. It may be a mistake, or I miss that interface IProductRepository must have only getter.");
+                context.Products.Remove(dbEntry);
+                context.SaveChanges();
             }
+            return dbEntry;
+        }
+
+        public void SaveProduct(Product product)
+        {
+            if (product.ProductID == 0)     // add if new. 0 is default id for new items.
+                context.Products.Add(product);
+            else                            // change existing product
+            {
+                Product dbEntry = context.Products.Find(product.ProductID);
+                if (dbEntry == null)
+                {
+                    dbEntry.Name = product.Name;
+                    dbEntry.Description = product.Description;
+                    dbEntry.Price = product.Price;
+                    dbEntry.Category = product.Category;
+                }
+            }
+            context.SaveChanges();
         }
     }
 }
