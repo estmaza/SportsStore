@@ -5,6 +5,8 @@ using System.Web.Mvc;
 using Ninject;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Concerte;
+using SportsStore.WebUI.Infrastructure.Abstract;
+using SportsStore.WebUI.Infrastructure.Concrete;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -35,6 +37,7 @@ namespace SportsStore.WebUI.Infrastructure
             EmailSettings emailSettings = new EmailSettings { WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false") };
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>().WithConstructorArgument("settings", emailSettings);
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }
